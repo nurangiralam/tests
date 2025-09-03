@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web App Tasks - To-Do List & Quiz</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <button onclick="showSection('todoSection')">✅ To-Do List</button>
+    <button onclick="showSection('quizSection')">🧠 Quiz App</button>
+  </nav>
+
+  <!-- Task 1: To-Do List -->
+  <div id="todoSection" class="section active">
+    <div class="todo-container">
+      <h2>✅ To-Do List</h2>
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <button id="addBtn">Add Task</button>
+      </div>
+      <div class="filter-section">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+      </div>
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+
+  <!-- Task 2: Quiz App -->
+  <div id="quizSection" class="section">
+    <div class="quiz-container">
+      <h2>JavaScript Quiz</h2>
+      <div id="quiz">
+        <p class="question" id="question"></p>
+        <div class="options" id="options"></div>
+        <p class="timer" id="timer"></p>
+        <button id="nextBtn">Submit & Next</button>
+      </div>
+      <div id="reviewSection" class="hidden">
+        <h3>Review Your Answers</h3>
+        <div id="review"></div>
+        <button id="finalSubmit">Submit Quiz</button>
+      </div>
+      <div id="resultSection" class="hidden">
+        <h3 class="result"></h3>
+        <div class="correct-answers" id="correctAnswers"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link external JS -->
+  <script src="script.js"></script>
+</body>
+</html>

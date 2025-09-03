@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #0077b6;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav button:hover {
+  background: #0096c7;
+}
+.section { display: none; }
+.active { display: block; }
+
+/* To-Do Styles */
+.todo-container {
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  width: 400px;
+  margin: auto;
+}
+.todo-container h2 { text-align: center; color: #0077b6; }
+.input-section { display: flex; gap: 10px; margin-bottom: 15px; }
+input {
+  flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 8px;
+}
+button {
+  padding: 10px 15px; border: none; border-radius: 8px;
+  background: #0077b6; color: white; cursor: pointer; transition: 0.3s;
+}
+button:hover { background: #0096c7; }
+.filter-section { text-align: center; margin-bottom: 15px; }
+ul { list-style: none; padding: 0; margin: 0; }
+li {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #f8f9fa; margin-bottom: 8px; padding: 10px;
+  border-radius: 8px; transition: all 0.3s ease;
+}
+li.completed span { text-decoration: line-through; color: #888; }
+.delete-btn {
+  background: #e63946; color: white; border: none;
+  padding: 5px 10px; border-radius: 6px; cursor: pointer;
+}
+.delete-btn:hover { background: #d62828; }
+
+/* Quiz Styles */
+.quiz-container {
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+.quiz-container h2 { color: #0077b6; margin-bottom: 20px; }
+.question { font-size: 18px; margin-bottom: 15px; }
+.options { text-align: left; }
+.options label {
+  display: block; margin: 8px 0; padding: 10px;
+  background: #f8f9fa; border-radius: 8px; cursor: pointer; transition: 0.3s;
+}
+.options label:hover { background: #dbeef3; }
+.hidden { display: none; }
+.timer { margin-top: 10px; font-weight: bold; color: #e63946; }
+.review { text-align: left; margin-top: 15px; }
+.result { font-size: 18px; margin-top: 20px; }
+.correct-answers { text-align: left; margin-top: 15px; }
